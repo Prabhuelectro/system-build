@@ -10,6 +10,6 @@ wget https://git.buildroot.net/buildroot/snapshot/buildroot-2020.02.3.tar.gz
 
 cd buildroot/
 
-cp ../../rpi3 .config
+cp ../../rpi-64 .config
 
 make 
