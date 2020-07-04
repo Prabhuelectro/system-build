@@ -1,0 +1,25 @@
+name: Opencv
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Change file mode
+      run: chmod +x buildroot/rpi/build-rpi-64.sh
+
+    - name: Run the script
+      run: ./buildroot/rpi/build-rpi-64.sh
+      
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: OpenCV
+        path: build-system/buildroot/output/images/sdcard.img
