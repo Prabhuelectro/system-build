@@ -22,4 +22,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: OpenCV
-        path: linux-build/buildroot/output/images/sdcard.img
+        path: linux-build/buildroot-2020.02.3/output/images/sdcard.img
