@@ -10,8 +10,10 @@ wget https://git.buildroot.net/buildroot/snapshot/buildroot-2020.02.3.tar.gz
 
 tar xvf buildroot-2020.02.3.tar.gz
 
-cd buildroot-2020.02.3/
+cd ../
 
-cp -v ../../rpi-64 .config
+cp -v rpi-64 linux-build/buildroot-2020.02.3/.config
+
+cd linux-build/buildroot-2020.02.3/
 
 make 
