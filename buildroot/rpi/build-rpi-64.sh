@@ -12,6 +12,6 @@ tar xvf buildroot-2020.02.3.tar.gz
 
 cd buildroot-2020.02.3/
 
-cp ../../rpi-64 .config
+cp -v ../../rpi-64 .config
 
 make 
