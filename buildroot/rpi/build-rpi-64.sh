@@ -6,10 +6,10 @@ mkdir -pv linux-build/
 
 cd linux-build/
 
-git clone -b 2020.05.x git://git.busybox.net/buildroot
+wget https://git.buildroot.net/buildroot/snapshot/buildroot-2020.02.3.tar.gz
 
 cd buildroot/
 
-cp ../../rpi3-64 .config
+cp ../../rpi3 .config
 
 make 
