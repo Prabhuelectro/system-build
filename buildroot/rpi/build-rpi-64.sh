@@ -8,4 +8,8 @@ cd linux-build/
 
 git clone -b 2020.05.x git://git.busybox.net/buildroot
 
-cp ../rpi
+cd buildroot/
+
+cp ../../rpi3-64 .config
+
+make 
