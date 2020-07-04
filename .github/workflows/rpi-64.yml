@@ -1,4 +1,4 @@
-name: Opencv
+name: Buildroot
 
 on:
   push:
@@ -21,5 +21,5 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v1
       with:
-        name: OpenCV
+        name: sdimg
         path: linux-build/buildroot-2020.02.3/output/images/sdcard.img
