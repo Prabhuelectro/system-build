@@ -14,6 +14,8 @@ cd ../
 
 cp -v rpi-64 linux-build/buildroot-2020.02.3/.config
 
+cp -v linux linux-build/buildroot-2020.02.3/board/raspberrypi
+
 cd linux-build/buildroot-2020.02.3/
 
 make 
