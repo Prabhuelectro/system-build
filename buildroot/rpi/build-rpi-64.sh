@@ -12,7 +12,7 @@ tar xvf buildroot-2020.02.3.tar.gz
 
 cd ../
 
-cp -v rpi-64 linux-build/buildroot-2020.02.3/.config
+cp -v rpi-64_systemd linux-build/buildroot-2020.02.3/.config
 
 cp -v linux linux-build/buildroot-2020.02.3/board/raspberrypi
 
