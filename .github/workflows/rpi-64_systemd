@@ -1,4 +1,4 @@
-name: Buildroot RPI_SYSTEMD
+name: Buildroot RPI-64_SYSTEMD
 
 on:
   push:
